@@ -1,0 +1,61 @@
+Code:
+import java.util.Scanner;
+
+public class max
+{
+public static void main(String[] args)
+{
+String str1,str2;
+Scanner s = new Scanner(System.in);
+System.out.println("Enter Two Strings");
+str1=s.next();
+str2=s.next();
+
+System.out.println("Length of String str1= "+str1.length());
+System.out.println("Length of String str2= "+str2.length());
+System.out.println("String Upper Case Method= "+str1.toUpperCase());
+System.out.println("String Lower Case Method= "+str2.toLowerCase());
+System.out.println("String Char At Method= "+str1.charAt(2));
+
+System.out.println("String Equals Method");
+if(str1.equalsIgnoreCase(str2))
+{
+System.out.println("Strings Are Equals");
+}
+else
+{
+System.out.println("Strings Are Not Equals");
+}
+System.out.println("String Compare To Method= "+str1.compareTo(str2));
+
+}
+}
+
+CODE 2 : 
+
+import java.util.Scanner;
+
+public class max2
+{
+public static void main(String[] args)
+{
+int x,y;
+float f;
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter Two Number");
+x=scanner.nextInt();
+y=scanner.nextInt();
+System.out.println("Enter Decimal Number");
+f=scanner.nextFloat();
+
+System.out.println("Square Root Methods= "+Math.sqrt(x));
+System.out.println("Sine Root Method= "+Math.sin(x));
+System.out.println("Power Method= "+Math.pow(x,y));
+System.out.println("Ceil Method= "+Math.ceil(f));
+System.out.println("Floor Method= "+Math.floor(f));
+System.out.println("Min Method= "+Math.min(x,y));
+System.out.println("Max Method= "+Math.max(x,y));
+System.out.println("Abs Method= "+Math.abs(f));
+
+}
+}
