@@ -1,0 +1,42 @@
+program 1 :Method Overloading ( Static Polymorphism)
+
+ public class StaticPolymorphism { 
+    void fly(){ 
+        System.out.println("I am flying"); 
+    } 
+ 
+    void fly(String s){ 
+        System.out.println(s.toUpperCase()); 
+    } 
+ 
+    void fly(int x){ 
+        System.out.println("Area = " + x * x); 
+    } 
+ 
+    public static void main(String[] args){ 
+       StaticPolymorphism obj = new StaticPolymorphism();
+obj.fly();
+obj.fly("Overloading");
+obj.fly(5);
+}
+}
+
+// program 2:Dynamic Polymorphism ( Method Overriding) 
+
+class Parent 
+{ void print()
+ { int x = 10; 
+System.out.println(x * x); } 
+} 
+class DPolyex extends Parent
+ { void print()
+ { int fact = 1, 
+n = 5; 
+for (int i = 1; i <= n; i++)
+ { fact = fact * i; } 
+System.out.println("Factorial: " + fact); } 
+public static void main(String[] args) {
+DPoly s = new DPoly();
+ s.print(); } 
+}
+
