@@ -1,0 +1,27 @@
+program 1: implicit type casting 
+
+import java.util.Scanner ;
+class casting {
+public static void main(String[]args){
+Scanner obj = new Scanner (System.in);
+System.out.println("enter the integer value");
+int x = obj.nextInt();
+long l;
+l=x;
+System.out.println("l="+l);
+}
+}
+
+program 2: explicit type casting 
+import java.util.Scanner;
+class explicit {
+public static void main(String[]args){
+Scanner obj = new Scanner (System.in);
+double l;
+System.out.println("enter the value for double");
+l=obj.nextDouble();
+int x;
+x=(int)l;
+System.out.println("int ="+x);
+}
+}
