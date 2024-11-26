@@ -1,0 +1,65 @@
+CODE 1 :
+class Ab1{
+    void show(int x, int y) { 
+        System.out.println(x + " " + y); 
+    } 
+    
+    static void print() { 
+        System.out.println("Static method calling"); 
+    } 
+    
+    public static void main(String[] args) { 
+        Ab1 n = new Ab1(); 
+        n.show(90, 20);  
+        print();         
+    } 
+}
+
+CODE 2 :
+
+import java.util.*;
+
+class abi{
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        System.out.println("Enter a value:");
+        int d = s.nextInt();
+        
+        abi x = new abi();
+        x.area(d);
+        x.fact(d);
+        x.r_oe(d);
+        
+        System.out.println("Enter two numbers to add:");
+        int num1 = s.nextInt();
+        int num2 = s.nextInt();
+        x.add(num1, num2);
+    }
+
+    void area(int s) {
+        int c = s * s;
+        System.out.println("Area of Square = " + c);
+    }
+
+    void fact(int n) {
+        int Fact = 1;
+        for (int i = 1; i <= n; i++) {
+            Fact *= i;
+        }
+        System.out.println("Factorial of Number = " + Fact);
+    }
+
+    void r_oe(int y) {
+        if (y % 2 == 0)
+            System.out.println(y + " is an Even Number");
+        else
+            System.out.println(y + " is an Odd Number");
+    }
+
+    void add(int a, int b) {
+        int sum = a + b;
+        System.out.println("Sum of " + a + " and " + b + " is " + sum);
+    }
+}
+
