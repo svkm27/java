@@ -1,0 +1,74 @@
+program 1:
+
+interface A { 
+void methodA(); 
+} 
+ 
+ 
+interface B { 
+void methodB(); 
+} 
+ 
+ 
+class multi implements A, B { 
+public void methodA() { 
+System.out.println("This is methodA from interface A"); 
+} 
+ 
+ 
+public void methodB() { 
+System.out.println("This is methodB from interface B"); 
+}
+public static void main(String[] args) { 
+multi obj = new multi(); 
+obj.methodA(); 
+obj.methodB(); 
+} 
+}
+
+program 2:
+
+interface MyInterface { 
+void displayMessage(); 
+} 
+ 
+ 
+class MyClass implements MyInterface { 
+public void displayMessage() { 
+System.out.println("Hello, this is an interface implementation."); 
+} 
+} 
+ 
+ 
+public class Multiple { 
+public static void main(String[] args) { 
+MyClass obj = new MyClass(); 
+obj.displayMessage(); 
+} 
+}
+
+program 3:
+
+class Animal { 
+void sound() { 
+System.out.println("Animal makes a sound"); 
+} 
+} 
+ 
+ 
+class Dog extends Animal { 
+void sound() { 
+System.out.println("Dog barks"); 
+} 
+} 
+ 
+ 
+public class Main{ 
+public static void main(String[] args) { 
+Animal animal = new Animal(); 
+animal.sound(); 
+ 
+Animal dog = new Dog(); 
+dog.sound(); 
+} 
+}
