@@ -1,0 +1,101 @@
+program 1 :single inheritance 
+
+ class A {     void show() { 
+        System.out.println("I am in A class"); 
+    } 
+} 
+ 
+Class B
+extends A {     void show1() { 
+        System.out.println("I am in B class"); 
+    } 
+ 
+    public static void main(String[] args) {     
+    B obj = new B();        
+ obj.show();          
+ obj.show1();   
+}
+}
+
+program 2:multilevel inheritance
+
+class A {     void showA() { 
+        System.out.println("I am in class A"); 
+    } 
+} 
+ 
+class B extends A { // B inherits A 
+    void showB() { 
+        System.out.println("I am in class B"); 
+    } 
+} 
+ 
+class C extends B { // C inherits B (and indirectly A)     
+void showC() { 
+        System.out.println("I am in class C"); 
+    } 
+} 
+ 
+public class MultilevelExample {    
+ public static void main(String[] args) {        
+ C obj = new C();         
+obj.showA();        
+  obj.showC();  
+    } 
+} 
+
+program 3:hybrid  interface
+ A {     void showA(); 
+} 
+ 
+class B {     void showB() { 
+        System.out.println("I am in class B"); 
+    } 
+} 
+ 
+class C extends B implements A { 
+public void showA() { 
+        System.out.println("I am in class A"); 
+    } 
+ 
+    void showC() { 
+        System.out.println("I am in class C"); 
+    } 
+} 
+ 
+public class HybridExample {     public static void main(String[] args) {       
+  C obj = new C();         
+obj.showA();         
+ obj.showB();          
+obj.showC();  
+    } 
+} 
+
+program 4:Hierarchical Inheritance
+
+ class A {     void showA() { 
+        System.out.println("I am in class A"); 
+    } 
+} 
+ 
+class B extends A { // B inherits A     void showB() {         System.out.println("I am in class B"); 
+    } 
+} 
+ 
+class C extends A { // C inherits A 
+    void showC() { 
+        System.out.println("I am in class C"); 
+    } 
+} 
+ 
+public class HierarchicalExample {     public static void main(String[] args) { 
+B	objB = new B(); 
+C	objC = new C(); 
+ 
+        objB.showA();         
+        objB.showB(); 
+ 
+        objC.showA();           
+        objC.showC();  
+    } 
+} 
