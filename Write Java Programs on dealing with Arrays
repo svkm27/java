@@ -1,0 +1,119 @@
+program 1 :
+
+import java.util.Scanner ;
+class array {
+public static void main(String[]args){
+Scanner sc = new Scanner (System.in);
+int x [] = new int [5];
+System.out.println("Enter the values for array");
+for(int i=0;i<5;i++){
+ x[i] = sc.nextInt();
+
+}
+System .out.println("----------------------");	
+for (int i =0;i<5;i++){
+System.out.println(x[i]);
+}
+}
+}
+
+program 2:
+
+import java.util.Scanner ;
+class arr2{
+public static void main(String[]args){
+int x [][] = new int [3][3];
+Scanner sc = new Scanner (System.in);
+System.out.println("Enter the value for the matrix");
+for(int i=0;i<3;i++){
+for(int j =0;j<3;j++){
+x[i][j]= sc.nextInt();
+}
+}
+for (int i=0;i<3;i++){
+for(int j=0;j<3;j++){
+System.out.println( x[i][j] +" \t");
+}
+System.out.println(" ");
+}
+}
+}
+
+program 3:
+
+import java.util.Scanner ;
+class array3 {
+public static void main(String[]args){
+Scanner sc = new Scanner (System.in);
+int x [][]=new int [2][2];
+int y [][] = new int [2][2];
+int add [][] = new int [2][2];
+System.out.println("Insert the elements");
+for (int i=0;i<2;i++){
+for (int j=0;j<2;j++){
+x[i][j] = sc.nextInt();
+}
+}
+for (int i=0;i<2;i++){
+for (int j=0;j<2;j++){
+y[i][j] = sc.nextInt();
+}
+}
+
+for (int i=0;i<2;i++){
+for (int j=0;j<2;j++){
+add [i][j] = x[i][j]+y[i][j];
+}
+}
+System.out.println ("addition of the martrix is");
+for (int i=0;i<2;i++){
+for (int j=0;j<2;j++){
+System.out.println (add [i][j]+"\t");
+
+}
+System.out.println(" ");
+}
+}
+}
+
+program 4:
+import java.util.Scanner;
+
+class array4  {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x[][] = new int[2][2];  
+        int y[][] = new int[2][2];  
+        int mul[][] = new int[2][2];  
+
+        System.out.println("Insert the elements of the first 2x2 matrix:");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                x[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("Insert the elements of the second 2x2 matrix:");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                y[i][j] = sc.nextInt();
+            }
+       }
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                mul[i][j] = 0;  
+                for (int k = 0; k < 2; k++) {
+                    mul[i][j] += x[i][k] * y[k][j];
+                }
+            }
+     }
+        System.out.println("Multiplication of the matrices is:");
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(mul[i][j] + "\t");  
+            System.out.println();  
+        }
+
+        sc.close();  
+    }
+}
