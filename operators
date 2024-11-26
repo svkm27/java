@@ -1,0 +1,79 @@
+CODE1:Assignment operators
+
+import java.util.Scanner ;
+class scan {
+public static void main(String[]args){
+Scanner obj = new Scanner (System.in);
+int x;
+String d;
+System.out.println("Enter Roll no");
+x=obj.nextInt();
+System.out.println("Enter Name");
+d=obj.next();
+System.out.println("Rollno="+x+"Name="+d);
+}
+}
+
+CODE2 : relational
+
+import java.util.Scanner;
+class operator {
+public static void main(String[]args){
+int a,b;
+Scanner obj = new Scanner (System.in);
+a = obj.nextInt();
+b = obj.nextInt();
+System.out.println("a>b"+(a>b));
+}
+}
+
+CODE 3 : logical
+
+import java.util.Scanner;
+class relational {
+public static void main(String[]args){
+int a;
+int b;
+int c;
+Scanner obj = new Scanner (System.in);
+a = obj.nextInt();
+b = obj.nextInt();
+c=obj.nextInt();
+System.out.println("a>b and c>a"+(a>b && c>a)); 
+}
+}
+
+CODE 4 : arithmetaic operators 
+
+import java.util.Scanner;
+class arith{
+public static void  main(String[]args){
+int a;
+int b;
+Scanner obj =new Scanner(System.in);
+a= obj.nextInt();
+b=obj.nextInt();
+System.out.println("The value of a+b is"+(a+b));
+}
+}
+
+CODE 5: bitwise operators 
+
+public class BitwiseOperators {
+ public static void main(String[] args) {
+  int a = 5;
+ int b=3;
+  int andResult = a & b;
+ System.out.println("a & b = " + andResult);
+ int orResult = a | b;
+ System.out.println("a | b = " + orResult);
+  int xorResult = a ^ b;
+ System.out.println("a ^ b = " + xorResult);
+ int notResult = ~a;
+ System.out.println("~a = " + notResult);
+  int leftShiftResult = a << 1;
+  System.out.println("a << 1 = " + leftShiftResult)
+  int rightShiftResult = a >> 1;
+ System.out.println("a >> 1 = " + rightShiftResult);
+    }
+}
